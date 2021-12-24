@@ -10,11 +10,8 @@ const BASE_URL_ICON = "http://openweathermap.org/img/wn/"
 const ICON_ZOOM = "4x"
 
 const apiCall = async (loc) => {
-    console.log("hey")
-    createLoading()
     const response = await fetch(`${BASE_URL}/weather?q=${loc}&units=metric&appid=${API_KEY}`)
     const data = await response.json()
-    destroyLoading()
     return data
 }
 
@@ -34,13 +31,15 @@ const cleanJson = async (loc) => {
 }
 
 const createWeather = async (city) => {
+    createLoading()
     const data = await cleanJson(city)
-
+    createCard(data)
+    destroyLoading()
 }
 
 const cityInput = document.querySelector("#inputCity")
 const submitButton = document.querySelector(".submitCity")
 submitButton.addEventListener("click", ()=>{
-    cleanJson(cityInput.value)
+    createWeather(cityInput.value)
     cityInput.value=""
 })
