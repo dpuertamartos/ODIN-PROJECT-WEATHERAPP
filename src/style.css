@@ -1,9 +1,27 @@
+.hero-image{
+    background-image: url("./background.jpg");
+    background-color: #cccccc;
+    height: 100%;
+    min-height: 1600px;
+    padding: 0% 0% 1.5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 25px;
+}
+
 .weatherForm{
     padding: 5% 0% 1%;
 }
 
 .form-label{
+    color: whitesmoke;
     font-size: 1.6rem;
+}
+
+.form-text{
+    color: wheat;
 }
 
 .cr{
