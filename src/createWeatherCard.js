@@ -46,7 +46,7 @@ const createCard = (data) =>{
     listGroupItem1.textContent = "temperature: "+data.temp+" ºC"
     const listGroupItem2 = document.createElement("li")
     listGroupItem2.className = "list-group-item"
-    listGroupItem2.textContent = "wind-speed: "+data.windspeed
+    listGroupItem2.textContent = "wind-speed: "+data.windspeed+" m/s"
     const listGroupItem3 = document.createElement("li")
     listGroupItem3.className = "list-group-item"
     listGroupItem3.textContent = "humidity: "+data.humidity+ "%"

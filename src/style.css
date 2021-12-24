@@ -1,5 +1,9 @@
 .weatherForm{
-    padding: 5% 5%;
+    padding: 5% 0% 1%;
+}
+
+.form-label{
+    font-size: 1.6rem;
 }
 
 .cr{
