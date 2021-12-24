@@ -1,0 +1,1 @@
+(async a=>{const e=await(async a=>{const e=await fetch("https://api.openweathermap.org/data/2.5/weather?q=LONDON&units=metric&appid=f0ff2b9afab2f7a7896bbb38273a7a85");return await e.json()})();newjson={name:e.name,weather:e.weather[0].main,weatherDescription:e.weather[0].description,temp:e.main.temp,humidity:e.main.humidity,windspeed:e.wind.speed},console.log(newjson)})();
