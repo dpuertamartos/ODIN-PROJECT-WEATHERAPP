@@ -7,7 +7,22 @@
   </head>
   <body>
     <div id="header"></div>
-    <div class="container">
+    <div class="container weatherForm">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="mb-3">
+                  <label for="inputCity" class="form-label">Introduce city that you want to see the weather</label>
+                  <input type="text" class="form-control" id="inputCity" aria-describedby="cityHelp">
+                  <div id="cityHelp" class="form-text">Name can be in English or Spanish</div>
+                </div>
+                <button class="btn btn-outline-success submitCity">Submit</button>
+            </div>
+        </div>
+        <div id="weatherDisplay" class="row justify-content-center">
+        </div>
+    </div>
+    <div class="container justify-content-center">
+    </div>
     <div class="footer cr">David Puerta ©
       <script>
           let date =  new Date().getFullYear();
